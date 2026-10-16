@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonny Monroy · Data Scientist & GIS FullStack</title>
+  <meta name="description" content="Portafolio de Jonny Alejandro Monroy Chavez — Data Scientist & GIS FullStack. Machine Learning, ETL, PySpark, PostGIS y geoespacial en Bogotá, Colombia.">
+  <meta property="og:title" content="Jonny Monroy · Data Scientist & GIS FullStack">
+  <meta property="og:description" content="De 5,4M de registros geoquímicos a pipelines de movilidad urbana: datos que se convierten en decisiones.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">Bogotá, Colombia · Disponible para nuevos retos</p>
+      <h1>Jonny Alejandro<br><span>Monroy Chavez</span></h1>
+      <p class="tagline">Data Scientist & GIS FullStack — transformo datos geoespaciales y de negocio en decisiones medibles: de <strong>5,4 millones de registros geoquímicos</strong> con ML al pipeline de movilidad de los 14 corredores de Bogotá.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#proyectos">Ver proyectos ↓</a>
+        <a class="btn btn-ghost" href="mailto:jhonny.a.monroy@gmail.com">Contáctame</a>
+      </div>
+      <div class="stats-band">
+        <div class="stat"><strong>5+</strong><span>años de experiencia</span></div>
+        <div class="stat"><strong>5,4 M</strong><span>registros geoquímicos procesados</span></div>
+        <div class="stat"><strong>92 %</strong><span>accuracy ML en producción</span></div>
+        <div class="stat"><strong>-80 %</strong><span>tiempos de proceso con ETL automatizado</span></div>
+      </div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <section id="sobre-mi" class="section reveal">
+      <h2>Sobre mí</h2>
+      <div class="about-grid">
+        <p>
+          Soy ingeniero catastral y geodesta con especialización en <strong>Análisis Estadístico para Ciencia de Datos</strong> (Universidad de La Salle). Durante más de cinco años he construido soluciones de datos de extremo a extremo para el sector público y privado: modelos de Machine Learning, pipelines ETL, plataformas GIS y aplicaciones fullstack.
+        </p>
+        <p>
+          Actualmente desarrollo en el <strong>Servicio Geológico Colombiano</strong> la plataforma <em>Huella Digital de Minerales</em>: ETL de 5,4 millones de registros, modelos de clasificación (Random Forest, XGBoost, PCA, LDA) con <strong>92 % de precisión</strong>, y una app analítica Shiny integrada con Java/Angular. Antes, en la <strong>Secretaría Distrital de Movilidad</strong>, automaticé con Python los flujos de datos de monitoreo de velocidades, reduciendo los tiempos de proceso en un 80 %.
+        </p>
+      </div>
+      <ul class="highlights">
+        <li>🧪 Modelado supervisado y no supervisado (RF, XGBoost, PCA, LDA, k-means)</li>
+        <li>🔌 ETL multi-fuente: Oracle, PostgreSQL/PostGIS, Elasticsearch, BigQuery, APIs REST</li>
+        <li>🛰️ Geoespacial de punta a punta: ArcGIS Enterprise, GeoServer, GeoPandas, Folium</li>
+        <li>🖥️ FullStack: Java Spring Boot, Angular/React, Node, Shiny (Python y R)</li>
+        <li>📈 Comunicación: dashboards Power BI, tableros ArcGIS, apps interactivas</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="section reveal">
+      <h2>Proyectos destacados</h2>
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-head"><span class="icon">🔬</span><span class="tag">Data Science · Shiny · scikit-learn</span></div>
+          <h3>HDM Geochemistry Explorer</h3>
+          <p>App interactiva + ML para clasificar la <strong>procedencia de muestras geoquímicas</strong> (espectros por número atómico, PCA, LDA, Random Forest). Demo pública derivada de la plataforma <em>Huella Digital de Minerales</em> del SGC, con 360 mil registros y 5.992 muestras.</p>
+          <div class="metrics"><span>92 % accuracy</span><span>5,4 M registros</span><span>108 elementos</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/geochem-ml-hdm" target="_blank">Repo →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="icon">⚡</span><span class="tag">PySpark · Delta Lake · Databricks</span></div>
+          <h3>Bogotá Mobility Spark</h3>
+          <p>Pipeline batch de velocidades por corredor con arquitectura <strong>medallón (bronze/silver/gold)</strong>: ingesta con esquema explícito, cuarentena de calidad, deduplicación por ventana y KPIs de congestión. Incluye notebook Databricks, Spark SQL, DAG de Airflow y tests.</p>
+          <div class="metrics"><span>97,7 k registros/día</span><span>5 tests ✔</span><span>41 s pipeline</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/bogota-mobility-spark" target="_blank">Repo →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="icon">🚦</span><span class="tag">ETL · BigQuery · Oracle</span></div>
+          <h3>Mobility ETL Pipelines</h3>
+          <p>Tres pipelines ETL de misión crítica construidos en la <strong>Secretaría Distrital de Movilidad</strong> —Waze→Oracle, estados de semáforos→BigQuery, API→servicio GIS— publicados desensibilizados, con interfaces desacopladas y tests unitarios.</p>
+          <div class="metrics"><span>-80 % tiempos</span><span>Ejecución programada</span><span>5 tests ✔</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/mobility-etl-pipelines" target="_blank">Repo →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="icon">🗺️</span><span class="tag">PostGIS · FastAPI · Docker</span></div>
+          <h3>Geovisor SIATA</h3>
+          <p>Geovisor de coberturas de suelo con análisis espacial server-side (<code>ST_Intersection</code>, <code>ST_Area</code>): PostGIS + FastAPI + GeoServer + Leaflet/Turf.js, todo orquestado en Docker. Prueba técnica resuelta de punta a punta.</p>
+          <div class="metrics"><span>4 contenedores</span><span>API + WMS + Front</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/prueba-tecnica-siata" target="_blank">Repo →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="icon">🌐</span><span class="tag">GeoNode · GeoServer · PostGIS</span></div>
+          <h3>GeoDataInsights Platform</h3>
+          <p>Plataforma geoespacial empresarial <strong>100 % open-source</strong> —equivalente funcional de ArcGIS Enterprise— sobre GeoNode + MapStore, con branding automatizado vía Django y arquitectura documentada con equivalencias FOSS.</p>
+          <div class="metrics"><span>Producto propio</span><span>Arquitectura documentada</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/geodata-platform" target="_blank">Repo →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="icon">📦</span><span class="tag">Node · PostGIS · React PWA</span></div>
+          <h3>SAJI GO · Última milla</h3>
+          <p>Suite de productos para mensajería y retail: motor de tarifas con consultas espaciales reales (<code>ST_Distance</code>, <code>ST_Within</code>), wizard de envíos multi-paso, dashboard admin y POS transaccional desplegado en Render.</p>
+          <div class="metrics"><span>En producción</span><span>Pricing geoespacial</span></div>
+          <div class="links"><a href="https://github.com/Jonny-Monroy/saji-go" target="_blank">Repo →</a></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experiencia" class="section reveal">
+      <h2>Experiencia</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2025 — hoy</span>
+          <h3>Desarrollador FullStack & Data Scientist · Servicio Geológico Colombiano</h3>
+          <p>Lidero el desarrollo de la plataforma Huella Digital de Minerales: pipelines de 5,4 M registros, modelos ML (RF, XGBoost, PCA, LDA) con 92 % de precisión, backend Java Spring Boot + Angular y dashboards Power BI/Shiny.</p>
+        </li>
+        <li>
+          <span class="when">2025</span>
+          <h3>Profesional de Visión Artificial & Ciencia de Datos · Cuatro Conceptos SAS</h3>
+          <p>Pipeline de etiquetado y entrenamiento de 10.000+ imágenes (TensorFlow, PyTorch), detección de techos y fachadas con mAP 85 %, y mapas de profundidad con MIDAS.</p>
+        </li>
+        <li>
+          <span class="when">2024 — 2025</span>
+          <h3>Profesional GIS — Desarrollo y Automatización · Secretaría Distrital de Movilidad</h3>
+          <p>ETL multi-fuente (Elasticsearch, PostGIS, Oracle, BigQuery, APIs) para el monitoreo de los 14 corredores principales: -80 % en tiempos de proceso. Administración de ArcGIS Enterprise, GeoServer y bases espaciales.</p>
+        </li>
+        <li>
+          <span class="when">2019 — 2024</span>
+          <h3>GIS Developer & Analista de Datos · Realidad 5.0 · Pidiendo Pista · Catastro Distrital</h3>
+          <p>Control de calidad de 500.000+ registros catastrales (LADMCOL), segmentación de clientes k-means con 50.000 transacciones y desarrollo WebGIS (OpenLayers, Node, PostGIS).</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Ciencia de datos & ML</h3>
+          <div class="chips">
+            <span>Python</span><span>R</span><span>pandas</span><span>NumPy</span>
+            <span>scikit-learn</span><span>XGBoost</span><span>TensorFlow</span><span>PyTorch</span>
+            <span>OpenCV</span><span>EDA</span><span>Feature Engineering</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Datos & Cloud</h3>
+          <div class="chips">
+            <span>SQL avanzado</span><span>PostgreSQL / PostGIS</span><span>Oracle</span>
+            <span>PySpark</span><span>Databricks</span><span>Delta Lake</span>
+            <span>BigQuery</span><span>Elasticsearch</span><span>AWS (SageMaker, Glue)</span>
+            <span>Docker</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Geoespacial</h3>
+          <div class="chips">
+            <span>ArcGIS Enterprise</span><span>ArcGIS Pro / Dashboards</span><span>GeoServer</span>
+            <span>QGIS</span><span>GeoPandas</span><span>Folium</span><span>Leaflet</span>
+            <span>Experience Builder</span><span>PostGIS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Desarrollo & BI</h3>
+          <div class="chips">
+            <span>Java Spring Boot</span><span>Angular</span><span>React</span>
+            <span>Node.js / Express</span><span>Flask</span><span>Shiny (Python / R)</span>
+            <span>Power BI</span><span>Tableau</span><span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="educacion" class="section reveal">
+      <h2>Educación</h2>
+      <div class="edu-grid">
+        <div class="edu">
+          <h3>Especialización en Análisis Estadístico para Ciencia de Datos</h3>
+          <p class="where">Universidad de La Salle · Bogotá · 2026</p>
+          <p>Kriging y autocorrelación espacial (Moran/LISA), minería de datos, técnicas supervisadas y no supervisadas, minería de textos.</p>
+        </div>
+        <div class="edu">
+          <h3>Ingeniería Catastral y Geodesia</h3>
+          <p class="where">Universidad Distrital Francisco José de Caldas · Bogotá · 2020</p>
+          <p>Formación en geomática, sistemas de información geográfica y gestión del territorio.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacto">
+    <h2>¿Conversamos?</h2>
+    <p>Abierto a roles de <strong>Data Scientist</strong>, <strong>Data Engineer</strong> y <strong>Analista de Datos Senior</strong> — presencial o híbrido en Bogotá, o remoto.</p>
+    <div class="footer-links">
+      <a href="mailto:jhonny.a.monroy@gmail.com">✉️ jhonny.a.monroy@gmail.com</a>
+      <a href="https://linkedin.com/in/jonny-alejandro-monroy-chavez" target="_blank" rel="noopener">💼 LinkedIn</a>
+      <a href="https://github.com/Jonny-Monroy" target="_blank" rel="noopener">🐙 GitHub</a>
+      <a href="tel:+573105938299">📱 +57 310 593 8299</a>
+    </div>
+    <p class="fineprint">© 2026 Jonny Alejandro Monroy Chavez · Hecho con HTML/CSS/JS puro, sin frameworks.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
